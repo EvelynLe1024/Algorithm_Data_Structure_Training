@@ -10,9 +10,11 @@ Output: [[1,0,0],[0,1,0],[1,1,1]]
 Explanation: First reverse each row: [[0,1,1],[1,0,1],[0,0,0]].
 Then, invert the image: [[1,0,0],[0,1,0],[1,1,1]]
 
+Source: https://leetcode.com/problems/flipping-an-image/
+
 ***
 Solution:
-The solution below (1) reverses each row of the matrix by turning each row into a reversed copy of itself, and (2) replace 1's with 0's
+The solution below (1) reverses each row of the matrix by turning each row into a reversed copy of itself, and (2) replaces 1's with 0's
 and 0's with 1's in each row. 
 
 '''
