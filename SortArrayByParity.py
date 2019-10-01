@@ -14,7 +14,7 @@ Solution:
 The solution below uses (1) pointer "even" as an index that starts at index 0 of the list, (2) a for loop to iterate through the list and 
 swap any even element at index i with the element at index "even" and then increment "even" by 1. This method sorts the array in-place. 
 
-Approach approach to sorting the list is create an empty list and iterate through the array twice to 1) first append the even elements and
+Another approach to sorting the list is create an empty list and iterate through the array twice to 1) first append the even elements and
 2) append the odd elements. This approach is less efficient than the first one, however, since it uses extra space. 
 
 '''
@@ -23,7 +23,6 @@ class Solution:
     def sortArrayByParity(self, A: List[int]) -> List[int]:
         if len(A) < 1 and len(A) > 5000:
             return None
-            
         even = 0
         for i in range(len(A)):
             if A[i] % 2 == 0:
@@ -36,7 +35,6 @@ class Solution:
     def sortArrayByParity(self, A: List[int]) -> List[int]:
         if len(A) < 1 and len(A) > 5000:
             return None
-       
         new_list = []        
         for i in range(len(A)):
             if A[i] % 2 == 0:
