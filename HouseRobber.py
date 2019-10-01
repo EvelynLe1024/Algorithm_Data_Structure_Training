@@ -24,7 +24,8 @@ Source: https://leetcode.com/problems/house-robber/
 ****
 Solution:
 The solution below uses dynamic programming to store the maximum amount of money the robber could steal at each house given that he 
-cannot steal from two adjacent houses in one night.
+cannot steal from two adjacent houses in one night. The solution returns the maximum amount of money at the last index of the memoization
+array.
 
 '''
 
