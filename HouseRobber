@@ -1,3 +1,4 @@
+'''
 Problem:
 You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint 
 stopping you from robbing each of them is that adjacent houses have security system connected and it will automatically contact the 
@@ -24,6 +25,8 @@ Source: https://leetcode.com/problems/house-robber/
 Solution:
 The solution below uses dynamic programming to store the maximum amount of money the robber could steal at each house given that he 
 cannot steal from two adjacent houses in one night.
+
+'''
 
 class Solution:
     def rob(self, nums: List[int]) -> int:
