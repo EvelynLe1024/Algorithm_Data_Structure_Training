@@ -13,7 +13,7 @@ Output: [1,2]
 Source: https://leetcode.com/problems/fair-candy-swap/
 
 ***
-The strategy here is that Alice will need to give Bob an amount of candy that makes up for the difference between Alice's or Bob's amount
+The strategy here is that Bob will need to give Alice an amount of candy that makes up for the difference between her amount
 and the average candy of the two. 
 
 The solution below:
