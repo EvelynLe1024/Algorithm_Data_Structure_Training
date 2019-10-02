@@ -12,13 +12,14 @@ Source: https://leetcode.com/problems/sort-array-by-parity/
 *** 
 Solution:
 The solution below uses (1) pointer "even" as an index that starts at index 0 of the list, (2) a for loop to iterate through the list and 
-swap any even element at index i with the element at index "even" and then increment "even" by 1. This method sorts the array in-place. 
+swaps any even element at index i with the element at index "even" and then increment "even" by 1. This method groups elements the array 
+in-place. 
 
 Another approach to sorting the list is create an empty list and iterate through the array twice to 1) first append the even elements and
 2) append the odd elements. This approach is less efficient than the first one, however, since it uses extra space. 
 
 '''
-# Approach 1: in-place sorting
+# Approach 1: in-place grouping
 class Solution:
     def sortArrayByParity(self, A: List[int]) -> List[int]:
         if len(A) < 1 and len(A) > 5000:
@@ -29,6 +30,10 @@ class Solution:
                 A[even], A[i] = A[i], A[even]
                 even += 1
         return A
+    
+# Time complexity: O(N)
+# Space complexity: O(1)
+
         
   # Approach 2: Creating an additional array
   class Solution:
@@ -43,4 +48,7 @@ class Solution:
             if A[j] % 2 == 1:
                 new_list.append(A[j])
         return new_list
+    
+    # Time complexity: O(N)
+    # Space complexity: O(N)
       
