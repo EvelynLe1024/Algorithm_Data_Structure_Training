@@ -25,4 +25,6 @@ class Solution:
             e = [arr[i] for arr in A]            
             T.append(e)
         return T
-            
+    
+ # Time complexity: O(R * C) where R and C are the numbers of rows and columns in the original input array 
+ # Space complexity: O(R * C)
