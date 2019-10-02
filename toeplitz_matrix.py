@@ -20,7 +20,7 @@ In each diagonal all elements are the same, so the answer is True.
 The solution below:
 1. uses two for loops to look at each cell in the matrix starting from column 2 (index 1) and row 2 (index 1) 
 2. returns False if the value of a particular cell is different from the one that's one column to the left and one row above
-3. returns True if the condition above holds for all the cells iterated through in the matrix
+3. returns True if the condition above doesn't hold for all the cells iterated through in the matrix
 '''
 class Solution:
     def isToeplitzMatrix(self, matrix: List[List[int]]) -> bool:
