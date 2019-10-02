@@ -5,6 +5,8 @@ Example 1:
 Input: [-4,-1,0,3,10]
 Output: [0,1,9,16,100]
 
+Source: https://leetcode.com/problems/squares-of-a-sorted-array/
+
 *** 
 Solution:
 The solution below (1) iterates through all elements in the array to square them and (2) sorted the new array with squared elements. 
