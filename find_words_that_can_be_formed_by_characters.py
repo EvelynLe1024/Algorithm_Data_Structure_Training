@@ -15,7 +15,7 @@ Solution:
 The solution below uses dictionaries to solve this problem. It
 1. counts the number of times (value) each chracter (key) appears in chars
 2. iterates through every string in words, do step 1 for each string
-3. increment variable "total" by the lend of a string if all of the values for each key in that string is greater than or equal to 1
+3. increment variable "total" by the length of a string if all of the values for each key in that string are greater than or equal to 1
 but less than or equal to the values for each key in chars. Basically, we want to make sure that all the characters in that string
 do no appear more than the frequecy of each chracter in chars. 
 
