@@ -40,4 +40,7 @@ class Solution:
         for i in range(2, n):
             h[i] = max(nums[i] + h[i - 2], h[i - 1])
         return h[n - 1]
+      
+ # Time complexity: O(N)
+ # Space complexity: O(N)
  
