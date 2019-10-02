@@ -24,17 +24,13 @@ class Solution:
     def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
         if not nums:
             return 0
-        
-        dp = [0] * len(nums)
         if nums[0] == 1:
             dp[0] = 1
-   
         for i in range(1, len(nums)):
             if nums[i] == 1:
                 dp[i] = dp[i - 1] + 1
             else:
                 dp[i] = 0
-    
         return max(dp)
     # Time complexity: O(N)
     # Space complexity: O(N)
