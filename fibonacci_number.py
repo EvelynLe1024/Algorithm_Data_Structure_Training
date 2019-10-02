@@ -16,7 +16,7 @@ Source: https://leetcode.com/problems/fibonacci-number/
 ***
 Solution: 
 The solution below uses dynamic programming to:
-1. store the previously calculated value at each Fibonacci number and
+1. store the previously calculated values at each Fibonacci number and
 2. return the value at F(N)
 
 This solution improves upon the recursion only approach. It avoids recalculating the value of each Fibonacci number at each recursion
