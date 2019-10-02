@@ -9,7 +9,7 @@ Output: true
 ***
 Solution:
 The solution iterates through the input array to store the elements in the input array in a dictionary. If we encounter an element in the
-input array that that already exists in the dictionary, it means that the input array contains duplicates. Otherwise, it doesn't. 
+input array that already exists in the dictionary, it means that the input array contains duplicates. Otherwise, it doesn't. 
 '''
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
