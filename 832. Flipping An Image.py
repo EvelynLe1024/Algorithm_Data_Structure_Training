@@ -29,3 +29,6 @@ class Solution:
                 else:
                     ele[k] = 0
         return A
+ 
+# Time complexity: O(N^2)
+# Space complexity: O(1)
