@@ -13,7 +13,7 @@ Source: https://leetcode.com/problems/sort-array-by-parity-ii/
 Solution:
 The solution below:
 1. creates an empty array with the same length as the input array 
-2. iterate through the input array to find even numbers and insert them into the even indices of the new array 
+2. iterates through the input array to find even numbers and insert them into the even indices of the new array 
 3. iterate again through the input array to find odd numbers and insert them into the odd indices of the new array
 '''
 class Solution:
