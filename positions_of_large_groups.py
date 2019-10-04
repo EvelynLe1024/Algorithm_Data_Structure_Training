@@ -15,6 +15,8 @@ from 0 to the end of the list. If j is at the last index of the input array or i
 we compute the length from i to j to see if it's equal to or bigger than 3. If it is, we add [i, j] to the result array. We then move i to 
 j + 1 where the element is different from the previous one. If it's not, we keep iterating j using the for loop. 
 
+Source: https://leetcode.com/problems/positions-of-large-groups/
+
 '''
 class Solution:
     def largeGroupPositions(self, S: str) -> List[List[int]]:
