@@ -22,11 +22,11 @@ The solution below uses binary search to (1) find the two rows that might contai
 '''
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
-		# Edge cases: if the matrix is empty or if the matrix is not empty but has an empty element, return False.
+	# Edge cases: if the matrix is empty or if the matrix is not empty but has an empty element, return False.
         if not matrix or not matrix[0]:  
             return False
         
-		# Helper function to narrow down the array to two elements at indices 'hi' and 'lo' that might equal the target value
+	# Helper function to narrow down the array to two elements at indices 'hi' and 'lo' that might equal the target value
         def biSearch(arr, tar):
             lo, hi = 0, len(arr) - 1
             while lo + 1 < hi:
@@ -37,10 +37,9 @@ class Solution:
                     lo = mid
             return arr[hi] == tar or arr[lo] == tar                
        
-	   # The main function narrows the matrix down to two rows at indices 'hi' and 'lo' that might have the target value. We compare the first value of each 
-	   # rows to the target value. If the 1st element of the row at 'hi' is greater than the target, it means that we need to search for the target in the 
-	   # row at 'lo', and vice versa.
-	   
+	# The main function narrows the matrix down to two rows at indices 'hi' and 'lo' that might have the target value. We compare the first value of each 
+	# rows to the target value. If the 1st element of the row at 'hi' is greater than the target, it means that we need to search for the target in the 
+	# row at 'lo', and vice versa.	   
         loR, hiR = 0, len(matrix) - 1
         while loR + 1 < hiR:
             mid = loR + (hiR - loR) // 2
@@ -51,4 +50,7 @@ class Solution:
         if matrix[hiR][0] > target:
             return biSearch(matrix[loR], target)
         else:
-            return biSearch(matrix[hiR], target)   
+            return biSearch(matrix[hiR], target)  
+
+# Time complexity: O(log(R * N)
+# Space complexity: O(1)
