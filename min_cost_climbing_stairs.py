@@ -23,8 +23,8 @@ Base cases:
 - The minimum cost (MC) at step 1 is the value at index 0 in the input array. 
 - The MC at step 2 is the value at index 1 in the input array. 
 
-It then iterates through the input array from 0 to length array. At each step, we can decide whether to add the minimum cost of the last
-one step or the last two steps (picking the smaller on) and add the cost of that step to build the rest of the empty array. 
+It then iterates through the input array from 2 to length array. At each step, we can decide whether to add the minimum cost of the last
+one step or the last two steps (picking the smaller one) and add the cost of that step to build the rest of the empty array. 
 The minimum cost of steps is the smaller value of the last two steps. 
 
 '''
