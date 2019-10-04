@@ -10,7 +10,6 @@ Solution:
 The solution below uses a math trick to:
 1. calculate the sum of numbers from 1 to n
 2. find the sum of the input array 
-
 The missing number is the difference between the 1st sum and the 2nd sum. 
 '''
 class Solution:
