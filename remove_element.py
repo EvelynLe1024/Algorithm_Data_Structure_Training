@@ -14,7 +14,7 @@ Source: https://leetcode.com/problems/remove-element/
 Solution:
 The solution below uses two pointers i and j to group the elements in-place. 
 - i points to the first element that's different from val. 
-- j iterates throuhg the array to find elements that are different from val to swap with the element at i
+- j iterates through the array to find elements that are different from val to swap with the element at i
 Whenever j points to an element different from val, we swap the elements at i and j and increment the two pointers each by 1. 
 If not, we keep incrementing j by 1 until it reaches the end of the input array. 
 
