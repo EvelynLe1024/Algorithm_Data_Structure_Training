@@ -19,7 +19,8 @@ class Solution:
         sum_list = sum(nums)
         
         num_missing = total - sum_list
-        return num_missin
+        return num_missing
+    
  # Time complexity: O(N)
  # Space complexity: O(1)
         
