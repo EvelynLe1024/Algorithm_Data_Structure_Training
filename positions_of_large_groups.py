@@ -13,7 +13,7 @@ Solution:
 The solution below uses two pointers i and j to find the start (i) and the end (j) of each large group. i starts at 0, and j iterates 
 from 0 to the end of the list. If j is at the last index of the input array or if the element at j is different from the element at (j + 1),
 we compute the length from i to j to see if it's equal to or bigger than 3. If it is, we add [i, j] to the result array. We then move i to 
-j + 1 where the element is different from the previous one. 
+j + 1 where the element is different from the previous one. If it's not, we keep iterating j using the for loop. 
 
 '''
 class Solution:
