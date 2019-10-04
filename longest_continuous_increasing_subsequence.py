@@ -14,6 +14,11 @@ Solution:
 The solution below uses a for loop to interate through the array. If a subarray is increasing, it will increment count by 1 and update the
 maximum length of the LIS subarray. If the subarray is decreasing, count is reset to 1. 
 
+Another way to solve this problem is using dynamic programming to store the maximum length of the LIS at each index in the original input. 
+The time complexity for this solution is O(N) since we have to iterate through the whole array to compare adjacent elements. 
+The space complexity is O(N) since we have to create an extra array for storage. 
+The difference in the space complexity (O(N) v. O(1)) makes this solution less efficient than the one below. 
+
 '''
 class Solution:
     def findLengthOfLCIS(self, A: List[int]) -> int:
