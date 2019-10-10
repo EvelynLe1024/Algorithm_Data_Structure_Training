@@ -19,9 +19,11 @@ I present here two different solutions to this problem.
 '''
 
 '''
-I. Solution 1: Greedy 
-The 1st solution uses the greedy algorithm to find the desired indices. The greedy althorithm computes a solution in steps. At each step,
-the algorithm picks a locally optimum option. The solution takes advantage of the sortedness of the array to:
+I. Solution 1: Invariants
+The 1st solution uses invariants to find the desired indices. An invariant is a condition that is true during the execution of a 
+program. Invariants can be used to eliminate suboptimal solutions. 
+
+The first solution takes advantage of the sortedness of the array to:
 1. use a while loop with two pointers i and j to iterate through the array. Pointer i starts at index 0, and pointer j starts at the last 
 index of the array. 
 2. compute the sum of the elements at each pair of i and j, shrinking the subarray from one side or the other. 
