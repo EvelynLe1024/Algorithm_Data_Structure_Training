@@ -20,7 +20,7 @@ The solution below:
 1. finds the average amount of candy each person can have
 2. finds the difference between Alice's amount of candy and the average
 3. uses a dictionary to store all the candies Bob has as keys
-4. checks if Bob has an amount of candy he can give to Alice can increase her candy amount to the average of the two
+4. checks if Bob has an amount of candy he can give to Alice that can increase her candy amount to the average of the two
 
 '''
 class Solution:
