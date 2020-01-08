@@ -47,10 +47,10 @@ class Solution:
             if nums[i] == 1:
                 count += 1                            
                 list.append(count)                
-                j += 1
+                i += 1
             else:
                 count = 0
-                j += 1
+                i += 1
         return max(list)
      # Time complexity: O(N)
      # Space complexity: O(N)
